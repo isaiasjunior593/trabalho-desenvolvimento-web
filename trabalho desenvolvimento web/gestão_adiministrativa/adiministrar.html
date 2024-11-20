@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Usuários</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Gestão de Usuários</h1>
+    
+    <!-- Formulário de Adicionar/Editar Usuário -->
+    <form id="userForm">
+        <input type="hidden" id="userId" name="userId">
+        <input type="text" id="nome" name="nome" placeholder="Nome" required>
+        <input type="email" id="email" name="email" placeholder="Email" required>
+        <input type="password" id="senha" name="senha" placeholder="Senha" required>
+        <button type="submit">Salvar</button>
+    </form>
+    
+    <!-- Tabela de Usuários -->
+    <table id="usuariosTable">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Senha</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Dados serão preenchidos via JavaScript -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
